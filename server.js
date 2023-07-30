@@ -10,17 +10,17 @@ import knex from "knex"
 // import handleProfileGet from "./controllers/profile.js"
 // import handleImage from "./controllers/image.js"
 
-// const db = knex({
-//   client: "pg",
-//   version: "7.2",
-//   connection: {
-//     host: "127.0.0.1",
-//     port: 5432,
-//     user: "postgres",
-//     password: "test",
-//     database: "test",
-//   },
-// })
+const db = knex({
+  client: "pg",
+  version: "7.2",
+  connection: {
+    host: "127.0.0.1",
+    port: 5432,
+    user: "postgres",
+    password: "test",
+    database: "test",
+  },
+})
 
 console.log("New ******************************")
 
