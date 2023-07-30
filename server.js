@@ -48,6 +48,8 @@ app.get("/", (req, res) => {
   // res.send(database.users)
 })
 
+app.post("/signin", (req, res) => handleSignin(req, res, db, bcrypt))
+
 app.listen(3000, () => {
   console.log("app is running on port 3000")
 })
