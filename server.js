@@ -7,8 +7,8 @@ import knex from "knex"
 // import { TYPES } from "tedious"
 // import handleRegister from "./controllers/register.js"
 import handleSignin from "./controllers/signin.js"
-// import handleProfileGet from "./controllers/profile.js"
-// import handleImage from "./controllers/image.js"
+import handleProfileGet from "./controllers/profile.js"
+import handleImage from "./controllers/image.js"
 
 const db = knex({
   client: "pg",
