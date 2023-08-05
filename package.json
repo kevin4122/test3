@@ -1,11 +1,12 @@
 {
+  "type": "module",
   "name": "backend-1",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,7 @@
     "knex": "^2.5.1",
     "pg": "^8.11.1"
   },
-  "type": "module"
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
