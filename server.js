@@ -5,7 +5,7 @@ import bcrypt from "bcrypt-nodejs"
 // import cors from "cors"
 import knex from "knex"
 // import { TYPES } from "tedious"
-// import handleRegister from "./controllers/register.js"
+import handleRegister from "./controllers/register.js"
 import handleSignin from "./controllers/signin.js"
 import handleProfileGet from "./controllers/profile.js"
 import handleImage from "./controllers/image.js"
@@ -45,7 +45,7 @@ app.use((request, response, next) => {
 })
 
 app.get("/", (req, res) => {
-  // res.send(database.users)
+  res.send("it is working!")
 })
 
 app.post("/signin", (req, res) => handleSignin(req, res, db, bcrypt))
